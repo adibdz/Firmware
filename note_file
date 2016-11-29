@@ -1,0 +1,26 @@
+"line first editing test for git"
+"second line editing test for git"
+"tirhd line editing test or git"
+	0x0804829D	0XBFFFF6A3	0X0000002F
+:	L --> H
+:	9D
+	82
+	04 --> 0xBFFFF47E : 0x04 0x08 0xA3 0xf6 --> 0xf6a30804
+	08
+	
+	A3
+	F6
+	FF
+	BF
+	
+	2F
+	00
+	00
+	00
+	
+:	&large_string = 0xBFFFF47E --> 0XF6A30804
+========================================================================
+========================================================================
+
+mov    DWORD PTR [ebp-0xc],0x0 : move DWORD 0x0 value to ebp-0xc is point to --> the value on ebp-0xc will be replaced
+lea    edx,[ebp-0x2a]	: load effective address from ebp-0x2a to edx	--> edx will contain an address 
