@@ -1,0 +1,5 @@
+usr/include/i386-linux-gnu/bits/socket.h
+usr/include/i386-linux-gnu/sys/socket.h
+
+usr/include/netinet/in.h
+usr/include/arpa/inet.h

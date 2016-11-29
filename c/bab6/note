@@ -1,0 +1,3 @@
+linked list: list list yang di linkkan
+recursive struct: struct yang memiliki link ke struck yang lain yang bertipe
+		  sama
