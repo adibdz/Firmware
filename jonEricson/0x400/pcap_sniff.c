@@ -1,6 +1,7 @@
 #include <pcap.h>
 #include "hacking.h"
 #include <stdlib.h>
+// Go to wireshark
 
 void pcap_fatal(const char *, const char *);
 
