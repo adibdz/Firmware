@@ -7,6 +7,9 @@
 #include "hacking.h"
 
 #define PORT 7890
+/* Tesing comment
+ * For learning only
+ */
 
 void fatal(char *);
 
