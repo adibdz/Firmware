@@ -1,3 +1,4 @@
+/* menentukan endianness */
 #include <stdio.h>
 
 #define LITTLE_ENDIAN 1
