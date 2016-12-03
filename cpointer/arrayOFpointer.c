@@ -21,4 +21,9 @@ int main() {
 		printf("Arrptr indeks-%d: Address: %p --> Val: %p\n",
 				i, &arrptr[i], arrptr[i]);
 	}
+
+	/* kenapa (arr dan &arr) dan (arrptr dan &arrptr) sama?
+	 * karena (arr dan &arr) dan (arrptr dan &arrptr) termasuk tipe
+	 * array variabel
+	 */
 }
