@@ -6,7 +6,7 @@ void pcap_fatal(const char *, const char *);
 
 int main() {
 	struct pcap_pkthdr header;
-	const u_char *packet;
+	const unsigned char *packet; /* const u_char* packet; */
 	char errbuf[PCAP_ERRBUF_SIZE];
 	char *device;
 	pcap_t *pcap_handle;
