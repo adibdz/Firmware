@@ -24,6 +24,6 @@ int main() {
 
 	/* kenapa (arr dan &arr) dan (arrptr dan &arrptr) sama?
 	 * karena (arr dan &arr) dan (arrptr dan &arrptr) termasuk tipe
-	 * array variabel
+	 * array variabel dan pointer array variabel
 	 */
 }
