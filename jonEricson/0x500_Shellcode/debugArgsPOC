@@ -1,0 +1,38 @@
+					G.D.B RESULT for char const *b[]:
+
+0x08048550 --------> /bin/sh
+0x08048594 --------> AAAA
+
+		ADDRESS:			 VALUES:	  VALUES POINTED TO:
+
+main: 
+k[0] :	0xbffff3f8 --------> 0x08048550	: /bin/sh
+k[1] :	0xbffff3fc --------> 0x00000000	: NULL
+
+tesFunctArgs:
+b    :	0xbffff3f8 --------> 0x08048550	: /bin/sh    : b is actually pointer var
+	there are't b[0], b[1] or b[2]. b is just pointer variable that
+	point to k / &k / &k[0].
+&b   :	0xbffff3e8 --------> 0xbffff3f8	: 0x08048550
+b[0] :	0xbffff3f8 --------> 0x08048550	: /bin/sh    : %s
+b[0] :	0xbffff3f8 --------> 0x08048550	: /bin/sh    : %p
+&b[0]:	0xbffff3f8 --------> 0x08048550	: /bin/sh    : 0xbffff3f8
+name :	0xbffff3cc --------> 0x08048594	: AAAA       : 0x08048550
+b[1] = name:	0xbffff3fc ---------> 0x08048594
+     - update the value on 0xbffff3fc point to
+--------------------------------------------------------------------------------
+					G.D.B RESULT for const char **aa:
+
+0x08048540 --------> /bin/sh
+
+		ADDRESS:			 VALUES:	  VALUES POINTED TO:
+
+main: 
+k[0] :	0xbffff3e8 --------> 0x08048540	: /bin/sh
+
+tesFunctArgs:
+aa[0] :	0x08048540 --------> /bin/sh
+aa[0] :	0x08048540 --------> /bin/sh
+&aa[0]:	0xbffff3e8 --------> 0x08048540
+&aa   :	0xbffff3d4 --------> 0xbffff3e8
+aa    :	0xbffff3e8 --------> 0x08048540

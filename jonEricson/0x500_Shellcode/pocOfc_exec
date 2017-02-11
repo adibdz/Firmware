@@ -1,0 +1,4 @@
+path: 0xbffff3e8 -----------> /bin/sh
+
+argv[0]: 0xbffff3e0 --------> 0xbffff3e8
+argv[1]: 0xbffff3e4 --------> 0x00000000
