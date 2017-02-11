@@ -2,7 +2,7 @@
 
 int main() {
 	int arr[] = {1,2,3,4};
-	int *arrptr[4];
+	int const *arrptr[4];
 	int i; // loop variable
 
 	for(i = 0; i < 4; i++)
