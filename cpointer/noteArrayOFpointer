@@ -1,0 +1,12 @@
+	ADDRESS           VALUE
+H
+	0xbff6e4e8 -----> 4
+	0xbff6e4e4 -----> 3
+	0xbff6e4e0 -----> 2
+	0xbff6e4dc -----> 1	 -----------------> arr
+
+	0xbff6e4d8 -----> 0xbff6e4e8
+	0xbff6e4d4 -----> 0xbff6e4e4
+	0xbff6e4d0 -----> 0xbff6e4e0
+	0xbff6e4cc -----> 0xbff6e4dc ---------> arrptr
+L
