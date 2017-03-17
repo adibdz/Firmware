@@ -1,0 +1,4 @@
+argv[0] : 	execv
+argv[1] : 	Peterpan
+argv[2] : 	Masa Lalu Tertinggal
+argv[3] : 	Menunggu Pagi

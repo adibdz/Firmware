@@ -1,5 +1,6 @@
 #include <stdio.h>
-unsigned long find_start(void) {
+
+unsigned int find_start() {
 	__asm__("movl %esp, %eax");
 }
 

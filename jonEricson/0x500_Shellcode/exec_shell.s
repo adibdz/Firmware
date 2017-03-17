@@ -1,5 +1,9 @@
 BITS 32
 
+section .text
+	global _start
+_start:
+
 	jmp short two
 
 one:

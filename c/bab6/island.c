@@ -11,7 +11,7 @@ void display(island *i) {
 	// island *i = start;
 	printf("\n- awal i point ke %p\n\n", i);
 	for(; i != NULL; i = i->next) {
-		printf("i point ke %p : Pulau: %s \nbuka: %s - %s\n", i, (*i).name, i->opens, i->closes);
+		printf("i point ke %p : Pulau: %s | %s - %s\n", i, (*i).name, i->opens, i->closes);
 	}
 	printf("\n- akhir i point ke %p\n", i);
 

@@ -20,7 +20,7 @@ void display(island *i) {
 
 island *create(char *name) {
 	island *i = malloc(sizeof(island));
-	i->name = strdup(name);
+	i->name =  (const char *)  strdup(name);
 	i->opens = "09:00";
 	i->closes = "17:00";
 	i->next = NULL;
@@ -30,12 +30,12 @@ island *create(char *name) {
 void release(island *start) {
 	island *i = start;
 	island *next = NULL;
-	char *name_address = NULL;
+	const char *name_address = NULL;
 	for(; i != NULL; i = next) {
 		next = (*i).next;
-		printf("Freeing memory on Heap: %p %s", i, (*i).name);
+		printf("[+].....done...-> Freeing %p-%s", i, (*i).name);
 		name_address = (*i).name; // problem still here <<< const string to pointer
-		free(name_address);
+		free((void* )name_address);
 		free(i);
 	}
 }
