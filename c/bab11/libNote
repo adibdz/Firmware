@@ -1,0 +1,17 @@
+- /usr/include/i386-linux-gnu/sys/socket.h :
+	int socket(int domain, int types, int protocol);
+	int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+	int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
+	int listen(int sockfd, int backlog);
+- /usr/include/i386-linux-gnu/bits/socket.h --> sys/socket.h :
+	struct sockaddr{};
+	typedef __socklen_t socklen_t;
+- /usr/include/netinet/in.h :
+	struct in_addr{};
+	struct sockaddr_in{};
+	ntohl(), ntohs(), htonl(), htons();
+- /usr/include/arpa/inet.h :
+	char *inet_ntoa(strct in_addr __in);
+	int inet_aton(const char *ascii_addr, strct in_addr *network_addr);
+- /usr/include/netdb.h :
+	struct hostent{};
